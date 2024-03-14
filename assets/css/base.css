@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --primary-color: #E4002B;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --text-color-grey: #888;
+
+    --navbar-height: 34px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ====== Common ====== */
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    min-width: 124px;
+    height: 46px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+.btn.btn--normal:hover {
+    cursor: pointer;
+}
+
+.btn.btn--size-s {
+    height: 30px;
+}
+
+.btn.btn--primary {
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    background-color: #c3c3c3;
+    color: #949494;
+}
+
+.btn.btn--with-icon {
+    padding: 8px 16px;
+}
+
+/* ====== Animation ====== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        transform: scale(var(--growth-from));
+    }
+    to {
+        opacity: 1;
+        transform: scale(var(--growth-to));
+    }
+}
+
+@keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}
+}
+
