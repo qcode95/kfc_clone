@@ -39,9 +39,9 @@
   </head>
   <body>
     <!-- Loader starts -->
-    <!-- <div id="loader">
+    <div id="loader">
       <img src="assets/images/KFC_Loader_Gif.gif" alt="Loading" />
-    </div> -->
+    </div>
     <!-- Loader ends -->
 
     <div class="wrapper">
@@ -901,12 +901,13 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
     <script>
-      //function gif() {
-      //document.getElementById("loader").style.display = "none";
-      //document.querySelector(".wrapper").style.display = "block";
-      //}
-      //setTimeout(gif, 2000);
+      function loader() {
+        document.getElementById("loader").style.display = "none";
+        document.querySelector(".wrapper").style.display = "block";
+      }
+      setTimeout(loader, 2000);
     </script>
 
     <script>

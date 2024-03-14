@@ -11,10 +11,10 @@ body {
   overflow-x: hidden;
 }
 
-/* .wrapper {
+.wrapper {
   display: none;
   width: 100vw;
-} */
+}
 
 /* Loader */
 #loader img {
