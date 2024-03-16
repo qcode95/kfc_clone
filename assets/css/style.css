@@ -11,27 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-.wrapper {
-  display: none;
-  width: 100vw;
-}
-
-/* Loader */
-#loader img {
-  width: 20vw;
-  height: 30vh;
-  margin-left: 40vmax;
-  margin-top: 15vmax;
-  z-index: 999999;
-}
-
-#loader {
-  background-color: whitesmoke;
-  width: 100vw;
-  height: 100vh;
-  z-index: 99999;
-}
-
 /* Header */
 .header {
   width: 100%;
@@ -90,22 +69,15 @@ body {
 }
 
 .nav__button-order {
-  font-weight: 400;
-  opacity: 0;
+  font-weight: 700;
   line-height: 20px;
   padding: 12px 35px;
-  transition: font-weight 0.5s ease, opacity 0.5s ease;
 }
 
 .nav__button-order-below {
   font-weight: 700;
   line-height: 20px;
   padding: 12px 35px;
-}
-
-.nav__button-order.show {
-  font-weight: 700;
-  opacity: 1;
 }
 
 .nav__item-language {
@@ -181,46 +153,12 @@ body {
   color: var(--primary-color);
 }
 
-/* Carousel */
-.slideshow-container {
-  width: 100%;
+/* Hero */
+.hero{
+  padding-top: 33%;
   position: relative;
-  margin: auto;
-}
-
-.mySlides {
-  display: none;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+  z-index: 10;
+  background: url('/assets/images/slide1.png') top center / contain no-repeat;
 }
 
 /* Browse category */
@@ -319,6 +257,11 @@ body {
   border-top-color: rgb(227, 227, 227);
 }
 
+.like-logo {
+  width: 130px;
+  height: 90px;
+}
+
 /* Like List */
 .like-list {
   margin-bottom: 50px;
@@ -399,6 +342,16 @@ body {
   color: var(--white-color);
   background-color: #cccccc;
   min-width: 242px;
+}
+
+.slick-next:before, .slick-prev:before {
+  font-family: slick;
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Download */

@@ -91,8 +91,20 @@
   }
 
   .like-logo {
-    width: 80px;
-    height: 60px;
+    width: 100px;
+    height: 70px;
+  }
+
+  .slick-next, .slick-prev {
+    opacity: 0;
+  }
+
+  .slick-next:before, .slick-prev:before {
+    opacity: 0;
+  }
+
+  .slick-next:focus, .slick-next:hover, .slick-prev:focus, .slick-prev:hover {
+    opacity: 0;
   }
 
   .browse-like__line {
@@ -188,6 +200,17 @@
     left: 55%;
     top: 55%;
   }
+
+  .footer__badge-heading {
+    display: inline-block;
+    width: 450px;
+    line-height: 1.2;
+  }
+
+  .footer__badge-description {
+    display: inline-block;
+    width: 375px;
+  }
 }
 
 /* ====== Mobile ====== */
@@ -258,6 +281,18 @@
   .like-logo {
     width: 80px;
     height: 60px;
+  }
+
+  .slick-next, .slick-prev {
+    opacity: 0;
+  }
+
+  .slick-next:before, .slick-prev:before {
+    opacity: 0;
+  }
+
+  .slick-next:focus, .slick-next:hover, .slick-prev:focus, .slick-prev:hover {
+    opacity: 0;
   }
 
   .like-text {
